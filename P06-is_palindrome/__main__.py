@@ -26,7 +26,7 @@ print('Input: {}'.format(in_list))
 out1 = is_palindrome1(in_list) # solution 1: without std lib
 print('Output (solution 1 - from scratch): {}'.format(out1))
     
-out2 = is_palindrome2(in_list) # solution 2: without std lib
+out2 = is_palindrome2(in_list) # solution 2: with std lib
 print('Output (solution 2 - with std lib): {}'.format(out2))
 
 
@@ -38,5 +38,5 @@ print('Input: {}'.format(in_list))
 out1 = is_palindrome1(in_list) # solution 1: without std lib
 print('Output (solution 1 - from scratch): {}'.format(out1))
     
-out2 = is_palindrome2(in_list) # solution 2: without std lib
+out2 = is_palindrome2(in_list) # solution 2: with std lib
 print('Output (solution 2 - with std lib): {}'.format(out2))

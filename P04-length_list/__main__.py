@@ -8,7 +8,7 @@ res0: Int = 6
 
 def length1(l): # from scratch
     n = 0
-    for i in l:
+    for elem in l:
         n += 1
     
     return n
@@ -24,5 +24,5 @@ print('Input: {}'.format(in_list))
 out1 = length1(in_list) # solution 1: without std lib
 print('Output (solution 1 - from scratch): {}'.format(out1))
     
-out2 = length1(in_list) # solution 2: without std lib
+out2 = length1(in_list) # solution 2: with std lib
 print('Output (solution 2 - with std lib): {}'.format(out2))
