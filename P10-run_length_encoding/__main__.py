@@ -30,7 +30,7 @@ def pack(l): # from scratch
 
     return new_list
 
-def encode(l):
+def encode1(l):
     new_list = []
 
     for sub_list in pack(l):
@@ -40,8 +40,21 @@ def encode(l):
 
     return new_list
 
+def encode2(l):
+    from itertools import groupby
+
+    new_list = []
+
+    for (k, g) in groupby(l):
+        new_list.append((len(list(g)), k))
+
+    return new_list
+
 in_list = ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e']
 print('Input: {}'.format(in_list))
 
-out = encode(in_list) # solution 1: without std lib
-print('Output: {}'.format(out))
+out1 = encode1(in_list) # solution 1: without std lib
+print('Output (solution 1 - from scratch): {}'.format(out1))
+
+out2 = encode2(in_list) # solution 2: with std lib
+print('Output (solution 2 - with std lib): {}'.format(out2))
