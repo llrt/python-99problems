@@ -24,5 +24,5 @@ def decode(l):
 in_list = [(4, 'a'), (1, 'b'), (2, 'c'), (2, 'a'), (1, 'd'), (4, 'e')]
 print('Input: {}'.format(in_list))
 
-out = decode(in_list) # solution: without std lib
+out = decode(in_list)
 print('Output: {}'.format(out))
